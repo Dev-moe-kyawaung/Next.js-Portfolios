@@ -1,10 +1,29 @@
 export default function PortfolioGrid() {
   const items = [
-    ["Certificates Collection", "Professional training, Android specialization, architecture, and cloud integration milestones."],
-    ["GitHub Account Collection", "Repository highlights, open-source contributions, and reusable engineering patterns."],
-    ["My App Collection", "Play Store-ready apps, internal tools, and polished mobile experiences."],
-    ["Organization Section", "Collaborative engineering, delivery standards, and scalable teamwork."],
-    ["Burmese Language Support", "Localized content and bilingual experience for stronger accessibility."]
+    [
+      "Certificates Collection",
+      "Professional training, Android specialization, architecture, and cloud integration milestones."
+    ],
+    [
+      "GitHub Account Collection",
+      "Repository highlights, open-source contributions, and reusable engineering patterns."
+    ],
+    [
+      "My App Collection",
+      "Play Store-ready apps, internal tools, and polished mobile experiences."
+    ],
+    [
+      "Organization Section",
+      "Collaborative engineering, delivery standards, and scalable teamwork."
+    ],
+    [
+      "Burmese Language Support",
+      "Localized content and bilingual experience for stronger accessibility."
+    ],
+    [
+      "Loveable Web App Links",
+      "Curated web tools and resources useful for product growth and shipping."
+    ]
   ];
 
   return (
