@@ -1,8 +1,22 @@
 import Timeline from "@/components/Timeline";
 
-export const metadata = {
-  title: "About"
-};
+export async function generateMetadata() {
+  return {
+    title: "About",
+    description:
+      "About Moe Kyaw Aung — Android Senior Developer with nearly 12 years of experience in Kotlin, Compose, Firebase, and clean architecture.",
+    alternates: {
+      canonical: "/about"
+    },
+    openGraph: {
+      title: "About | Moe-Kyaw-Aung-Portfolio V02",
+      description:
+        "Android Senior Developer portfolio about page with timeline, stats, and technical focus.",
+      url: "/about",
+      type: "website"
+    }
+  };
+}
 
 export default function AboutPage() {
   return (
@@ -22,11 +36,11 @@ export default function AboutPage() {
             <div className="glass p-4">
               <h2 className="h4 fw-bold">Tech-heavy categories</h2>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item bg-transparent">Android Developer | Kotlin | Jetpack Compose | MVVM | Clean Architecture</li>
-                <li className="list-group-item bg-transparent">Android Engineer | Kotlin, Coroutines, Room, Retrofit, Dagger/Hilt</li>
-                <li className="list-group-item bg-transparent">Android Developer | Jetpack Compose, Material 3, Firebase, CI/CD</li>
-                <li className="list-group-item bg-transparent">Android Developer | Native Android, Modular Architecture, Performance Optimization</li>
-                <li className="list-group-item bg-transparent">Android Engineer | Kotlin Multiplatform (KMM) | Android | Backend Integration</li>
+                <li className="list-group-item bg-transparent text-reset">Android Developer | Kotlin | Jetpack Compose | MVVM | Clean Architecture</li>
+                <li className="list-group-item bg-transparent text-reset">Android Engineer | Kotlin, Coroutines, Room, Retrofit, Dagger/Hilt</li>
+                <li className="list-group-item bg-transparent text-reset">Android Developer | Jetpack Compose, Material 3, Firebase, CI/CD</li>
+                <li className="list-group-item bg-transparent text-reset">Android Developer | Native Android, Modular Architecture, Performance Optimization</li>
+                <li className="list-group-item bg-transparent text-reset">Android Engineer | Kotlin Multiplatform (KMM) | Android | Backend Integration</li>
               </ul>
             </div>
           </div>
