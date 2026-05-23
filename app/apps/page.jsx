@@ -1,26 +1,33 @@
-export const metadata = { title: "Apps" };
+import PortfolioGrid from "@/components/PortfolioGrid";
 
-const apps = [
-  { title: "Secure Finance App", desc: "Offline-first budgeting with encryption.", img: "https://picsum.photos/seed/appa/900/650" },
-  { title: "Field Service App", desc: "Fast workflows with maps and sync.", img: "https://picsum.photos/seed/appb/900/800" },
-  { title: "Learning Companion", desc: "Compose UI, notifications, and analytics.", img: "https://picsum.photos/seed/appc/900/720" }
-];
+export async function generateMetadata() {
+  return {
+    title: "Apps",
+    description:
+      "Explore Moe Kyaw Aung's Android app collection, Play Store-ready work, and product case studies.",
+    alternates: {
+      canonical: "/apps"
+    },
+    openGraph: {
+      title: "Apps | Moe-Kyaw-Aung-Portfolio V02",
+      description: "Android app collection and showcase.",
+      url: "/apps",
+      type: "website"
+    }
+  };
+}
 
 export default function AppsPage() {
   return (
     <main className="section" style={{ paddingTop: "110px" }}>
       <div className="container-max">
         <h1 className="section-title reveal">My Create App Collection</h1>
-        <div className="row g-4 mt-1">
-          {apps.map((app) => (
-            <div className="col-md-6 col-lg-4 reveal" key={app.title}>
-              <div className="card-glass p-3">
-                <img src={app.img} alt={app.title} className="rounded-4 mb-3" />
-                <h2 className="h5">{app.title}</h2>
-                <p>{app.desc}</p>
-              </div>
-            </div>
-          ))}
+        <p className="section-subtitle reveal">
+          A compact showcase of Android apps, tools, and product ideas.
+        </p>
+
+        <div className="mt-4">
+          <PortfolioGrid />
         </div>
       </div>
     </main>
